@@ -22,7 +22,7 @@ main{
      align-items: center;
      background-color: #161616;
      border-radius: 25px;
-     padding : 2% 6% 0px;
+     padding : 2% 6% 0%;
  }
  .half-width h1{
      color : white;
@@ -34,7 +34,97 @@ main{
      margin : 20px 0px 30px ;
      font-size: 16px;
  }
- .half-width img{
-    height: 80%;
-    margin : 0 6% 4% 30%;
+ .half-width > img{
+    height: 100%;
+    width: 100%;
  }
+ .button-live{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF ;
+    border: 2px solid #DD0000;
+    padding: 16px 25px;
+
+    background-color: #DD0000;
+    border-radius: 5px;
+
+    transition: all ease-in 300ms;
+ }
+ .button-live:hover {
+    background-color: #FFFFFF;
+    color: #DD0000;
+}
+/* top banner section ended */
+
+/* Blog section started */
+.post-container aside{
+    background-color: black;
+    margin-bottom: 800px;
+}
+.menu-item{
+    font-weight: 600;
+    font-size: 16px;
+    color: #161616 ;
+    padding: 16px 25px;
+    background-color: #FFFFFF;
+    width: 90%;
+    border-radius: 5px;
+    margin: 4%;
+
+
+}
+#active{
+    background-color: #DD0000;
+}
+
+
+
+.post-container {
+    display: grid;
+    grid-template-columns: 220px auto;
+    gap: 10px;
+    margin: 70px 0;
+}
+.posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   grid-column-gap: 3px;
+}
+.posts >div{
+    margin: 2%;
+    box-shadow: 0px 0px 1px black;
+    border-radius: 10px;
+}
+.thumbnail img{
+    height: 100%;
+    width: 100%;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+  
+}
+.post section{
+    margin: 4%;
+}
+.post-information{
+    display: flex;
+
+}
+.post-information div{
+    margin: 4%;
+}
+.post-title{
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 15px;
+    border: 1px solid #161616 ;
+    border-radius: 5px;
+    text-align: center;
+}
+.post-body{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 15px 0 20px;
+}
