@@ -1,0 +1,40 @@
+/* normal style start */
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+main{
+    margin: 2% 6%;
+
+}
+
+
+/* normal style ended */
+
+ /* top banner section started */
+ .half-width {
+     width : 50%;
+ }
+ .top-banner{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #161616;
+     border-radius: 25px;
+     padding : 2% 6% 0px;
+ }
+ .half-width h1{
+     color : white;
+     font-size: 60px;
+     font-weight: 700;
+ }
+ .half-width p{
+     color: white;
+     margin : 20px 0px 30px ;
+     font-size: 16px;
+ }
+ .half-width img{
+    height: 80%;
+    margin : 0 6% 4% 30%;
+ }
