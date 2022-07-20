@@ -1,8 +1,10 @@
-/* normal style start */
+/*-------------------------------------------- normal style start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body{
     margin: 0%;
     padding: 0%;
+    font-family: 'Poppins', sans-serif;
 }
 main{
     margin: 2% 6%;
@@ -10,9 +12,9 @@ main{
 }
 
 
-/* normal style ended */
+/*--------------------------------------------- normal style ended */
 
- /* top banner section started */
+ /* -----------------------------------------top banner section started */
  .half-width {
      width : 50%;
  }
@@ -55,13 +57,14 @@ main{
     background-color: #FFFFFF;
     color: #DD0000;
 }
-/* top banner section ended */
+/*------------------------------------------ top banner section ended */
 
-/* Blog section started */
+/*-------------------------------------------- Blog section started */
 .post-container aside{
     background-color: black;
-    margin-bottom: 800px;
+    margin-bottom: 1000px;
 }
+/*--------------------------------------------- menu item started */
 .menu-item{
     font-weight: 600;
     font-size: 16px;
@@ -74,9 +77,20 @@ main{
 
 
 }
+menu-item:hover {
+    background-color: #DD0000;
+    
+    
+}
+.menu-item:hover{
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
 #active{
     background-color: #DD0000;
 }
+
+/* ----------------------------------------menu item ended */
 
 
 
@@ -97,6 +111,7 @@ main{
     border-radius: 10px;
 }
 .thumbnail img{
+    
     height: 100%;
     width: 100%;
 }
@@ -128,3 +143,42 @@ main{
     font-size: 18px;
     margin: 15px 0 20px;
 }
+/*-------------------------------------------- blog section ended */
+
+/* ------------------------------------------footer section started */
+
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    height : 50vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+}
+.footer-heading h1{
+   color :#FFFFFF;
+   font-weight: 600;
+   font-size: 40px;
+}
+article > .footer-menu-items{
+    display: flex;
+    
+}
+.footer-menu-item a{
+    text-decoration: none;
+    list-style: none;
+    color :#FFFFFF;
+    padding-right: 40px;
+    margin-top: 4%;
+}
+hr{
+    width: 80%;
+}
+.footer-menu-icon i{
+    color: #FFFFFF;
+    font-size: 20px;
+    
+    margin-right: 30px;
+}
+/*---------------------- footer section ended */
