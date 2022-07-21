@@ -144,6 +144,9 @@ menu-item:hover {
     font-size: 18px;
     margin: 15px 0 20px;
 }
+#view-all{
+ display: none;
+}
 
 
 
@@ -249,6 +252,9 @@ hr{
 
 
 /* -=================================================media query for tablet started */
+
+
+
 @media (min-width : 576px) and (max-width : 992px){
     .half-width p{
         color: white;
@@ -257,7 +263,7 @@ hr{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;    }
-   
+   /*============================ post blog item */
     .post-container{
         display: grid;
         grid-template-columns: 1fr;
@@ -269,11 +275,8 @@ hr{
         grid-template-columns: 1fr 1fr;
         justify-content: space-between;
     }
-   
-
-    .match-post-container {
-        display: grid;
-        grid-template-columns: 1fr;
+    .post:nth-last-child(6){
+        display: none;
     }
     .menu-post{
         display: flex;
@@ -288,30 +291,116 @@ hr{
       height: 53px;
       font-size: 1rem;
       text-align: center;
+
      
     }
+   
+  /*==================================== upcomming html */
+    .match-post-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .menu-match{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+    .match-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+   
     #view-all{
         display: flex;
-        justify-content: center;
         align-items: center;
-        margin: 50px 50px;
+        margin: 50px 50%;
         width: 200px;
-        justify-content: center;
+        justify-content: space-evenly;
 
         background-color: #DD0000;
         color: #FFFFFF;
     }
-        article > .footer-menu-items{
+    #view-all{
+        text-decoration: none;
+        list-style: none;
+    }
+  article > .footer-menu-items{
       display: flex;
       flex-wrap: wrap;
       
+      
   }
-  .footer-menu-item a{
+  .footer-menu-item> a{
     text-decoration: none;
     list-style: none;
     color :#FFFFFF;
     padding-right: 40px;
     margin-top: 4%;
 }
+.footer-menu-icon i{
+    color: #FFFFFF;
+    font-size: 20px;
+    
+    margin-right: 30px;
+    margin-bottom: 6%;
+}
   
   }
+  /*============================ use for mobile */
+@media (max-width : 557px){
+   .top-banner{
+   display: flex;
+   flex-direction: column;
+}
+.half-width p{
+    color: white;
+    margin : 20px 0px 30px ;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+ }
+ .post-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.posts{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+ .menu-post{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+
+
+}
+.menu-item {
+    font-weight: 600;
+    width: 200px;
+    height: 53px;
+    font-size: 1rem;
+    text-align: center;
+
+   
+  }
+article > .footer-menu-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    
+}
+.footer-menu-icon i{
+    color: #FFFFFF;
+    font-size: 20px;
+    
+    margin-right: 30px;
+    margin-bottom: 6%;
+}
+}
