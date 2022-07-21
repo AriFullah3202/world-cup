@@ -144,6 +144,10 @@ menu-item:hover {
     font-size: 18px;
     margin: 15px 0 20px;
 }
+
+
+
+
 /* -----------------------------------for extra upcomming html */
 .match-post-container {
     display: grid;
@@ -187,10 +191,21 @@ menu-item:hover {
     font-size: 20px;
     font-weight: 600;
 }
+/* -----------------------------------------for extra upcomming html ended */
 
 /*-------------------------------------------- blog section ended */
 
 /* ------------------------------------------footer section started */
+
+
+
+
+
+
+
+
+
+
 
 
 .footer-section{
@@ -201,9 +216,9 @@ menu-item:hover {
     background-color: #161616;
 }
 .footer-heading h1{
-   color :#FFFFFF;
-   font-weight: 600;
-   font-size: 40px;
+    color :#FFFFFF;
+    font-weight: 600;
+    font-size: 40px;
 }
 article > .footer-menu-items{
     display: flex;
@@ -216,6 +231,9 @@ article > .footer-menu-items{
     padding-right: 40px;
     margin-top: 4%;
 }
+.footer-menu-items >li{
+    list-style: none;
+}
 hr{
     width: 80%;
 }
@@ -227,3 +245,73 @@ hr{
     margin-bottom: 6%;
 }
 /*---------------------- footer section ended */
+
+
+
+/* -=================================================media query for tablet started */
+@media (min-width : 576px) and (max-width : 992px){
+    .half-width p{
+        color: white;
+        margin : 20px 0px 30px ;
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;    }
+   
+    .post-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  
+  
+    .posts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+   
+
+    .match-post-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .menu-post{
+        display: flex;
+        background-color: #FFFFFF;
+        justify-content: space-evenly;
+  
+  
+    }
+    .menu-item {
+      font-weight: 600;
+      width: 200px;
+      height: 53px;
+      font-size: 1rem;
+      text-align: center;
+     
+    }
+    #view-all{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 50px;
+        width: 200px;
+        justify-content: center;
+
+        background-color: #DD0000;
+        color: #FFFFFF;
+    }
+        article > .footer-menu-items{
+      display: flex;
+      flex-wrap: wrap;
+      
+  }
+  .footer-menu-item a{
+    text-decoration: none;
+    list-style: none;
+    color :#FFFFFF;
+    padding-right: 40px;
+    margin-top: 4%;
+}
+  
+  }
